@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Easy Pay</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        
+        
+    </head>
+    <body>
+        <!--<div class="container"> no container and you can use the whole screen as layout -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar">Home</span>
+                  <span class="icon-bar">About</span>
+                  <span class="icon-bar">Services</span>
+                  <span class="icon-bar">Contact</span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="MyLink active" data-link="Home"><a href="#">Home</a></li>
+                  <li class="MyLink" data-link="About"><a href="#">About</a></li>
+                  <li class="MyLink" data-link="Services"><a href="#">Services</a></li>
+                </ul>
+                <div class="btn-group marginTop10 pull-right">
+                    <button class="btn btn-default btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu loginDropDown">
+                        <form onsubmit="return false;">
+                            <div class="marginTop5 text-center">
+                                <input id="TxtLoginName" type="text" value="" placeholder="Username">
+                            </div>
+                            <div class="marginTop10 text-center">
+                                <input id="TxtLoginPassword" type="text" value="" placeholder="Password">
+                            </div>
+                            <div class="marginTop10 text-center">
+                                <button id="LblLogin" onclick="Login();" value="Login" type="button" class="btn btn-primary btn-sm">Login</button>
+                            </div>
+                            <button class="btn btn-default btn-sm text-center marginTop10" onclick="openModal();">Forgot password</button>
+                            <!--<div class="text-center marginTop15 MyLink" onclick="ShowNewCustomerPage();"><a>New customer</a></div>-->
+                        </form>
+                    </div>
+
+                </div>
+                <div class="marginRight25">
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control btn-sm" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search">&nbsp;</span>Search</button>
+                  </form>
+                </div>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        <div class="container"><!--<div class="MyPage" data-page="Employees"> employee page starts -->
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                  <div class="thumbnail">
+                    <img data-src="holder.js/300x200" alt="...">
+                    <div class="caption">
+                      <h3>Add Customer</h3>
+                      <form onsubmit="return false;">
+                        <div>
+                          <input id="TxtNewCustomerAccount" type="text" value="BA444" class="form-control" placeholder="Account">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerName" type="text" value="Mikkel" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerLastName" type="text" value="Andersen" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerAddress" type="text" value="Ellegade 4" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerPostal" type="text" value="1234" class="form-control" placeholder="Postal Code">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerTown" type="text" value="Ørredbæk" class="form-control" placeholder="Town">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerCPR" type="text" value="12-34" class="form-control" placeholder="CPR">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerEmail" type="text" value="bv@vb.dk" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="marginTop15">
+                          <input id="TxtNewCustomerAmount" type="text" value="88" class="form-control" placeholder="Amount">
+                        </div>
+                        <div>
+                            <div class="marginTop20">Gender</div>
+                            <div>
+                                <div>
+                                    <input id="TxtMale" type="radio" name="gender" value="Male"> 
+                                    <label for="TxtMale">Male</label>
+                                    <input id="TxtFemale" class="marginRight15" type="radio" name="gender" value="Female"> 
+                                    <label for="TxtFemale">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marginTop15 text-center">
+                            <button id="LblAddCustomer" class="btn btn-default" role="button" onclick="AddCustomer();" value="">Add Customer</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                  <div class="thumbnail">
+                    <img data-src="holder.js/300x200" alt="...">
+                    <div class="caption">
+                      <h3>Pending Approvals</h3>
+                      
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                  <div class="thumbnail">
+                    <img data-src="holder.js/300x200" alt="...">
+                    <div class="caption">
+                      <h3>Contact Customers</h3>
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                  <div class="thumbnail">
+                    <img data-src="holder.js/300x200" alt="...">
+                    <div class="caption">
+                      <h3>Statistics</h3>
+                      <p>...</p>
+                      <!--<div class="MyLink" data-link="StatisticsCustomers">-->
+                          <button id="LblStatistics" type="button" value="button"><a href="statisticsemployees.html">Button</a></button>
+                      <!--</div>-->
+                      <!--<p><a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4"><!-- transfer money -->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">  
+                        </div>
+                      <div class="caption">
+                        <h3>Transfer Money</h3>
+                            <div id="LblPaper" class="LblPaper">
+                                <div>
+                                    <div class="LblDisplay">From:</div>
+                                    <div id="LblDisplayNameFrom" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">Amount:</div>
+                                    <div id="LblDisplayAmount" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">To:</div>
+                                    <div id="LblDisplayNameTo" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">Date:</div>
+                                    <div id="LblDisplayDate" class="LblDisplay"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div >
+                                    <div><span>From:</span>
+                                        <select id="LblSelectBoxFrom">
+                                            <option value="LblSelectAccount">Select Account</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="marginTop15">
+                                    <span>Amount</span>
+                                    <input id="TxtAmount" type="text" value="10" placeholder="Enter Amount">
+                                </div>
+                                <div class="marginTop15">
+                                    <div><span>To:</span>
+                                        <select id="LblSelectBoxTo">
+                                            <option value="LblSelectAccount">Select Account</option>
+                                        </select>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                              <form onsubmit="return false;"> 
+                                  <button id="LblTransfer" onclick="EmployeeTransfer();" value="Transfer" type="button" class="btn btn-primary">Transfer</button>
+                              </form>
+                        </div>
+                    </div>
+                </div><!-- end thumbnail -->
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div><!-- end employee page -->
+        
+        <!--<div class="MyPage" data-page="StatisticsCustomers">-->
+            
+        <!--</div>-->
+            
+    <div class="footer"><!-- footer starts -->
+        <div class="footerNav">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li class="MyLink" data-link="About"><a href="#">About</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Easy Pay</a></li>
+                        <li><a href="#">Mastercard</a></li>
+                        <li><a href="#">Regular Account with Cash Credit</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">Contact</div>
+            </div>
+        </div><!-- end footerNav -->
+                
+                <div class="clearfix marginTop20">
+                    <div class="footerAddress">Easy Pay, Andersens Boulevard 25, DK-1150 Copenhagen, Phone: +45 89 89 96 96, Fax: +45 98 74 52 63, Mail: info@easypay.dk, CVR. 65 84 12 12</div>
+                    <div class="footerSocialMedia marginLeft75">
+                        <div class="floatLeft marginRight25">Follow us</div>
+                        <div class="Linkedin marginRight25 floatLeft"></div>
+                        <div class="Facebook floatLeft"></div>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p class="text-center marginTop20">Copyright 2014 / Easy Pay</p>
+                </div>
+            </div><!-- .footer ends -->
+            
+            
+        <!-- Scripts -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="dist/js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script>
+        
+        <!-- Forgot password  -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Forgot password</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group input-group">
+                <span class="input-group-addon">Name</span>
+                <input id="TxtCustomerName" type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="input-group input-group marginTop15">
+                <span class="input-group-addon">CPR</span>
+                <input id="TxtCustomerPassword" type="text" class="form-control" placeholder="CPR">
+              </div>
+              <div class="input-group input-group marginTop15">
+                <span class="input-group-addon">@</span>
+                <input id="TxtCustomerMail" type="text" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="ForgotPassword();">Forgot password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </body>
+</html>

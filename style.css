@@ -1,0 +1,429 @@
+/*------------------------------------------------
+        #MAIN
+--------------------------------------------------*/
+body {
+    background-color: #eaeaea;
+}
+.imageThumbnail img {
+    width: 100%;
+    height: 240px;
+}
+
+.inputFontSize {
+    font-size: 12px;
+}
+
+/*------------------------------------------------
+        #Sprite
+--------------------------------------------------*/
+.Linkedin {
+    height: 20px;
+    width: 20px;
+    background: url('images/sprite_socialmedia.png'); 
+
+}
+
+.Facebook {
+    height: 20px;
+    width: 20px;
+    background: url('images/sprite_socialmedia.png') -20px 0px;
+}
+
+/*------------------------------------------------
+        #NAVIGATION
+--------------------------------------------------*/
+#navbarMain.navbar.navbar-inverse.Menu{
+    margin-bottom: 0px;
+}
+.navbar {
+    /*background-color: #505051;*/
+    /*height: 125px;*/
+    border-radius: 0px;
+}
+a.navbar-brand {
+    height: 130px;
+}
+
+.loginDropDown {
+    height: 200px;
+    width: 300px;
+}
+
+.loginDropDown a {
+    font-size: 11px;
+}
+
+.navbar-inverse.navLogin{
+    background-color: #505051;
+    padding-top: 0px;
+}
+
+#navbarEmployee, #navbarCustomer { /*fixed so the navbars do not show when LocalStorage is cleared and the page is refreshed */
+    display: none;
+}
+
+.navbar-form {
+    padding-right: 0px;
+}
+
+#LblLogout{
+    display: none;
+}
+
+.loginWelcomeUser{
+    color: white;
+}
+
+/*------------------------------------------------
+        #CAROUSEL
+--------------------------------------------------*/
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 400px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+.item .carousel-caption.carouselText {
+    height: 250px;
+    width: 400px;
+    background-color: rgba(205,205,205,0.2);
+    position: absolute;
+    left: 60%;
+    padding-top: 20px;
+    z-index: 99999;
+    margin-top: 150px;
+    
+}
+
+.item .carousel-caption h3, .item .carousel-caption p{
+    /*color: white;*/
+    padding-left: 15px;
+    border-bottom: none;
+    width: 100%;
+    text-align: left;
+}
+
+/*------------------------------------------------
+        #LINKS
+--------------------------------------------------*/
+.MyLink {
+    
+}
+
+.MyPage {
+    display: none;
+}
+
+.MyPage[data-page="Home"] { /* alle .MyPage med attribute data-page med værdien "HOME" linkes til class */
+    display: block;
+}
+
+/*------------------------------------------------
+        #HEADER
+--------------------------------------------------*/
+.thumbnail h3 {
+    background-color: #3e4edd;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.MyPage h3 {
+    border-bottom: 2px #428bca solid;
+    width: 20%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------
+        #FOOTER
+--------------------------------------------------*/
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: #505051;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 11px;
+    
+/*    position: fixed;
+    bottom: 0px;*/
+    margin-top: 25px;
+}
+
+/* Font-color in footer */
+.footer, .footer a, .footer a:hover {
+    color: #e1e1e1;
+}
+
+.footerAddress {
+    float: left;
+    margin-left: 45px;
+}
+
+.footerSocialMedia {
+    float: left;
+}
+
+.footerNav {
+    border-bottom: 1px solid #777777;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+.footerNav li {
+    display: block;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.centered {
+    text-align: center;
+    list-style: none;
+}
+
+.centered li {
+    display: inline;
+}
+/*------------------------------------------------
+        #JUMBOTRON
+--------------------------------------------------*/
+.container .jumbotron {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 25px;
+}
+.jumbotron {
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    width: 600px;
+}
+
+.jumbotron .textbox {
+    position: absolute;
+    left: 55%;
+    top: 200px;
+}
+
+.jumbotron h1 {
+    color: white;
+    border-top: 2px solid white;
+    padding-top: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.jumbotron h3 {
+    color: white;
+    padding-top: 10px;
+}
+
+.jumbotron .btn {
+    position: absolute;
+    left: 62%;
+    top: 400px;
+}
+
+.formInput {
+    width: 213px;
+}
+
+/*------------------------------------------------
+        #PAGES
+--------------------------------------------------*/
+
+/*----- Customer.html + Employee.html - Transfer Money -------------*/
+.LblPaper {
+    position: absolute;
+    width: 284px;
+    height: 434px;
+    background: url("images/transfer-receipt.png");
+    display: none;
+    left: 50%;
+    right: 50%;
+    z-index: 99999;
+}
+
+.LblDisplay, .LblDisplayInline {
+    width: 200px;
+    height: auto;
+    font-size: 14px;
+   
+}
+
+.LblDisplayInline{
+    display: inline;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.LblDisplay.LblDisplayAmount {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*------------------------------------------------
+        #MARGINS
+--------------------------------------------------*/
+.marginTop0 {
+    margin-top: 0px;
+}
+
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.marginTop7 {
+    margin-top: 7px;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop15 {
+    margin-top: 15px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.marginTop50{
+    margin-top: 50px;
+}
+
+.marginTop75 {
+    margin-top: 75px;
+}
+
+.marginTop100 {
+    margin-top: 100px;
+}
+
+.marginTop125{
+    margin-top: 125px;
+}
+
+.marginTop150 {
+    margin-top: 150px;
+}
+
+.marginRight15 {
+    margin-right: 15px;
+}
+
+.marginRight25 {
+    margin-right: 25px;
+}
+
+.marginRight29 {
+    margin-right: 29.9px;
+}
+.marginRight40 {
+    margin-right: 40px;
+}
+
+.marginRight150 {
+    margin-right: 150px;
+}
+
+.marginLeft25 {
+    margin-left: 25px;
+}
+
+.marginLeft75 {
+    margin-left: 76px;
+}
+
+.marginLeft100 {
+    margin-left: 100px;
+}
+
+.marginLeft150 {
+    margin-left: 150px;
+}
+
+.marginLeft250 {
+    margin-left: 250px;
+}
+
+.marginLeft600 {
+    margin-left: 600px;
+}
+
+.marginButtom20 {
+    margin-bottom: 20px;
+}
+
+.marginButtom25 {
+    margin-bottom: 25px;
+}
+
+/*------------------------------------------------
+        #PADDING
+--------------------------------------------------*/
+.paddingTop10 {
+    padding-top: 10px;
+}
+
+.paddingRight25 {
+    padding-right: 25px;
+}
+
+.paddingRight150 {
+    padding-right: 150px;
+}
+
+.paddingRight750 {
+    padding-right: 750px;
+}
+
+.paddingLeft25 {
+    padding-left: 25px;
+}
+
+.paddingLeft45{
+    padding-left: 45px;
+}
+
+.paddingLeft107 {
+    padding-left: 107px;
+}
+
+.paddingBottom5 {
+    padding-bottom: 5px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+
+.slideDownCustomerInfo {
+    background: #de9a44;
+    margin: 3px;
+    width: 80px;
+    height: 40px;
+    display: none;
+    float: left;
+  }
+
+
+@media (min-width: 768px){
+    .navbar{
+        border-radius: 0px;
+    }
+}
+

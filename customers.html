@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- CSS -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="row"><!-- customer page starts -->
+                <div class="col-sm-6 col-md-4"><!-- Balance -->
+                    <div class="thumbnail">
+                      <div class="caption">
+                        <h3>Balance</h3>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor eleifend lectus non auctor. Proin nec sem metus. Etiam rhoncus est ac lacus aliquet tristique. Nunc ut molestie risus. Cras aliquam est sit amet velit consectetur ultricies.</p>
+                        <p><a href="#" class="btn btn-default" role="button">Show Balance</a></p>
+                      </div>
+                    </div>
+                </div><!-- end thumbnail -->
+                
+                <div class="col-sm-6 col-md-4"><!-- Customer History -->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">
+                            
+                        </div>
+                      <div class="caption">
+                        <h3>Customer History</h3>
+                        <!-- Show Customer History in a Modal -->
+                        
+                        
+                    </div>
+                </div><!-- end thumbnail -->
+                
+                
+            </div><!-- end customer history page -->
+            
+            <div class="row">
+                <div class="col-sm-6 col-md-4"><!-- customer information -->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">
+                            
+                        </div>
+                        <div class="caption">
+                            <h3>Customer Information</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor eleifend lectus non auctor. Proin nec sem metus. Etiam rhoncus est ac lacus aliquet tristique. Nunc ut molestie risus. Cras aliquam est sit amet velit consectetur ultricies.</p>
+                            Click me!
+                            <div class="slideDownCustomerInfo"></div>
+                            <p><a href="#" class="btn btn-default" role="button">Save</a></p>
+                        </div>
+                    </div>
+                </div><!-- end thumbnail -->
+                
+                <div class="col-sm-6 col-md-4"><!-- transfer money -->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">
+                            
+                        </div>
+                      <div class="caption">
+                        <h3>xxx</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor eleifend lectus non auctor. Proin nec sem metus. Etiam rhoncus est ac lacus aliquet tristique. Nunc ut molestie risus. Cras aliquam est sit amet velit consectetur ultricies.</p>
+                        <p><a href="#" class="btn btn-default" role="button">Read more</a></p>
+                      </div>
+                    </div>
+                </div><!-- end thumbnail -->
+                
+                <div class="col-sm-6 col-md-4"><!-- transfer money - denne thumbnail er overført til index.html-->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">  
+                        </div>
+                      <div class="caption">
+                        <h3>Transfer Money</h3>
+                            <div id="LblPaper" class="LblPaper">
+                                <div class="marginTop150">
+                                    <div class="LblDisplay">From:</div>
+                                    <div id="LblDisplayFrom" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">Amount:</div>
+                                    <div id="LblDisplayAmount" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">To:</div>
+                                    <div id="LblDisplayNameTo" class="LblDisplay"></div>
+                                </div>
+                                
+                                <div>
+                                    <div class="LblDisplay">Date:</div>
+                                    <div id="LblDisplayDate" class="LblDisplay"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <span>Amount:</span>
+                                    <input id="TxtAmount" type="text" value="10" placeholder="Enter Amount">
+                                </div>
+                                <div class="marginTop15">
+                                    <div><span>To:</span>
+                                        <select id="LblSelectBoxTo">
+                                            <option value="LblSelectAccount">Select Account</option>
+                                        </select>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                              <form onsubmit="return false;"> 
+                                  <button id="LblTransfer" onclick="CustomerTransfer();" value="Transfer" type="button" class="btn btn-primary">Transfer</button>
+                              </form>
+                        </div>
+                    </div>
+                </div><!-- end thumbnail -->
+                
+                <div class="col-sm-6 col-md-4"><!-- regular account with cash credit -->
+                    <div class="thumbnail">
+                        <div class="imageThumbnail">
+                            
+                        </div>
+                      <div class="caption">
+                        <h3>Diagram for Transfers</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor eleifend lectus non auctor. Proin nec sem metus. Etiam rhoncus est ac lacus aliquet tristique. Nunc ut molestie risus. Cras aliquam est sit amet velit consectetur ultricies.</p>
+                        <p><a href="#" class="btn btn-default" role="button">Read more</a></p>
+                      </div>
+                    </div>
+                </div><!-- end thumbnail -->
+            </div><!-- end customer page -->
+            
+            
+            
+             <!-- Scripts -->
+             <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        <script src="dist/js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>

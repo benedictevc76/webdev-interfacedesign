@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap 101 Template</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	
+	<div id="EditCustomerInformation">
+	<form class="form-horizontal" role="form">
+	    <div class="form-group">
+	      <label class="col-sm-2 control-label">Bank Account</label>
+	      <div class="col-sm-10">
+		<input readonly="readonly" value="BA123" id="LblReadonlyBankAccount" class="form-control">
+	      </div>
+	    </div>
+	    
+	    <div class="form-group">
+	      <label class="col-sm-2 control-label">CPR</label>
+	      <div class="col-sm-10">
+		<input readonly="readonly" value="12-23" id="LblReadonlyCPR" class="form-control">
+	      </div>
+	    </div>
+	    
+	    
+	</form>
+	</div>
+	
+	
+	<h3>Edit Profile</h3>
+        <div >
+	    <div>
+		<span>Bank Account</span>
+		<input readonly="readonly" value="BA123" id="LblReadonlyBankAccount">
+	    </div>
+	    <div>
+		<span>CPR</span>
+		<input id="LblReadonlyCPR" value="12-23" readonly="readonly">
+	    </div>
+	    <div>
+		<span>First Name</span>
+		<input id="LblEditFirstName" type="text" value="Ester" placeholder="Edit First Name">
+	    </div>
+	    <div>
+		<span>Last Name</span>
+		<input id="LblEditLastName" type="text" value="Hansen" placeholder="Edit Last Name">
+	    </div>
+	    <div>
+		<span>Adress</span>
+		<input id="LblEditAddress" type="text" value="Vænget 13" placeholder="Edit Adress">
+	    </div>
+	    <div>
+		<span>Postal Code</span>
+		<input id="LblEditPostalCode" type="text" value="8191" placeholder="Edit Postal Code">
+	    </div>
+	    <div>
+		<span>Town</span>
+		<input id="LblEditTown" type="text" value="Bøllerup" placeholder="Edit Town">
+	    </div>
+	    <div>
+		<span>Email</span>
+		<input id="LblEditEmail" type="text" value="bx@bd.dk" placeholder="Edit Email">
+	    </div>
+	    <div>
+		<span>Gender</span>
+		<input id="LblReadonlyGender" value="Female" readonly="readonly">
+	    </div>
+	    <div>
+		<span>Password</span>
+		<input id="LblEditPassword" type="text" value="916" placeholder="Edit Password">
+	    </div>
+        </div>
+	
+	<input type="button" id="LblEditCustomerInformation" value="Edit Customer Profile">
+	
+	<h3>xxx</h3>
+	<div>
+	    <span>Bank Account</span>
+	    <input id="TxtReadonlyBankAccount" readonly="readonly" value="">
+	    <span>CPR</span>
+	    <input id="TxtReadonlyCPR" readonly="readonly" value="">
+	    <span>First Name</span>
+	    <input id="TxtEditFirstName" readonly="readonly" value="">
+	    <span>Last Name</span>
+	    <input id="TxtEditLastName" readonly="readonly" value="">
+	    <span>Adress</span>
+	    <input id="TxtEditAddress" readonly="readonly" value="">
+	    <span>Postal Code</span>
+	    <input id="TxtEditPostalCode" readonly="readonly" value="">
+	    <span>Town</span>
+	    <input id="TxtEditTown" readonly="readonly" value="">
+	    <span>Email</span>
+	    <input id="TxtEditEmail" readonly="readonly" value="">
+	    <span>Gender</span>
+	    <input id="TxtReadonlyGender" readonly="readonly" value="">
+	    <span>Password</span>
+	    <input id="TxtEditPassword" readonly="readonly" value="">
+	</div>
+	
+	
+        
+        
+        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>    
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script> 
+    </body>
+</html>
